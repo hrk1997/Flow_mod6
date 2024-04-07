@@ -5,7 +5,7 @@ This Cadence program implements the Non-Fungible Token standard for creating and
 This program allows users to mint new NFTs, deposit and withdraw NFTs, and transfer ownership of NFTs between different users.
 
 ## Description
-These files contains a Cadence contract that demonstrates the creation and management of   Non-Fungible Tokens (NFTs) using the standard NonFungibleToken library in the Flow blockchain.
+These files contains a Cadence contract that demonstrates the creation and management of Non-Fungible Tokens (NFTs) using the standard NonFungibleToken library in the Flow blockchain.
 The contract allows for the creation of NFTs with metadata such as name, favorite food, and lucky number. 
 It also includes functions for depositing, withdrawing, transferring, and borrowing NFTs with a given ID.
 The CryptoPoops contract implements the NonFungibleToken standard and defines a resource named NFT for the creation of NFTs with custom metadata.
@@ -20,6 +20,11 @@ and the createMinter function allows for the creation of a Minter resource for m
 The contract emits events for the initialization of the contract, 
 as well as for the deposit and withdrawal of NFTs. Overall, 
 this contract provides a simple implementation of NFTs and demonstrates the core functionality required for creating and managing NFTs in a blockchain environment.
+In addition, a Minter resource for minting NFTs into Collections is included in the contract.
+The public functions that can be used to interact with the Collection resource, including deposit, getIDs, borrowNFT, borrowAuthNFT, and withdraw, are defined by the CollectionPub interface.
+A Minter resource for minting NFTs can be created using the createMinter function, and an empty Collection can be created using the createEmptyCollection function.
+
+Events are sent by the contract upon contract startup and upon NFT deposit and withdrawal. All things considered, this contract offers a straightforward NFT implementation and illustrates the fundamental features needed to create and administer NFTs in a blockchain setting.
 
 ## Requirements
 * Access to a Flow network node.
