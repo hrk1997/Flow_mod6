@@ -5,24 +5,10 @@ This Cadence program implements the Non-Fungible Token standard for creating and
 This program allows users to mint new NFTs, deposit and withdraw NFTs, and transfer ownership of NFTs between different users.
 
 ## Description
-These files contains a Cadence contract that demonstrates the creation and management of Non-Fungible Tokens (NFTs) using the standard NonFungibleToken library in the Flow blockchain.
-The contract allows for the creation of NFTs with metadata such as name, favorite food, and lucky number. 
-It also includes functions for depositing, withdrawing, transferring, and borrowing NFTs with a given ID.
-The CryptoPoops contract implements the NonFungibleToken standard and defines a resource named NFT for the creation of NFTs with custom metadata.
-It also defines a Collection resource that allows  the management of  collection of NFTs owned by a given address.
-The contract also includes a Minter resource for the creation of NFTs and minting them into a Collection.
+A Cadence contract included in these files shows how to create and manage Non-Fungible Tokens (NFTs) on the Flow network using the standard NonFungibleToken library. The contract permits the development of NFTs that contain metadata like lucky number, favorite meal, and name. Along with these features, it allows you to borrow, transfer, withdraw, and deposit NFTs using a specific ID. The NonFungibleToken standard is implemented by the CryptoPoops contract, which also specifies a resource called NFT for the production of NFTs with customized information. Additionally, it defines a Collection resource that enables an address's NFT collection to be managed. A Minter resource for producing NFTs and minting them into a Collection is also included in the contract.
 
-The CollectionPub interface defines the public functions that can be used to interact with the Collection resource,
-such as deposit, getIDs, borrowNFT, borrowAuthNFT, and withdraw.
-The createEmptyCollection function allows for the creation of an empty Collection,
-and the createMinter function allows for the creation of a Minter resource for minting NFTs.
 
-The contract emits events for the initialization of the contract, 
-as well as for the deposit and withdrawal of NFTs. Overall, 
-this contract provides a simple implementation of NFTs and demonstrates the core functionality required for creating and managing NFTs in a blockchain environment.
-In addition, a Minter resource for minting NFTs into Collections is included in the contract.
-The public functions that can be used to interact with the Collection resource, including deposit, getIDs, borrowNFT, borrowAuthNFT, and withdraw, are defined by the CollectionPub interface.
-A Minter resource for minting NFTs can be created using the createMinter function, and an empty Collection can be created using the createEmptyCollection function.
+The public functions that can be used to interact with the Collection resource, including deposit, getIDs, borrowNFT, borrowAuthNFT, and withdraw, are defined by the CollectionPub interface. The functions createMinter and createEmptyCollection enable the construction of Minter resources for minting NFTs and empty collections, respectively.
 
 Events are sent by the contract upon contract startup and upon NFT deposit and withdrawal. All things considered, this contract offers a straightforward NFT implementation and illustrates the fundamental features needed to create and administer NFTs in a blockchain setting.
 
